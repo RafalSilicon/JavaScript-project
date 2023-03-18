@@ -1,0 +1,31 @@
+{"developers":
+  [
+    {
+      "name":"Carlos",
+      "fullname":" Carlos Gardel ",
+      "image":"https://cdn.glitch.global/6a84aafb-55d5-4ef0-89b3-6ec18dd40633/thumbnails%2FCarlos%20Gardel.jpeg?1679167929482",
+      "joined":1935,
+      "job":"Singer",
+      "city":"Medellin",
+      "mates":1000001
+    },
+    {
+      "name":"Rafał",
+      "fullname":" Rafał Krzempek ",
+      "image":"https://cdn.glitch.global/6a84aafb-55d5-4ef0-89b3-6ec18dd40633/thumbnails%2FRafal.jpg?1679168594079",
+      "joined":2021,
+      "job":"SETU Student",
+      "city":"Waterford",
+      "mates":2
+    },
+    {
+      "name":" Pichuco",
+      "fullname":" Aníbal Troilo ",
+      "image":"https://cdn.glitch.global/6a84aafb-55d5-4ef0-89b3-6ec18dd40633/thumbnails%2FAn%C3%ADbal%20Troilo.jpeg?1679168060446",
+      "joined":1975,
+      "job":"Composer",
+      "city":"Buenos Aires",
+      "mates":500005
+    }
+  ]
+}
