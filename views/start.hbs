@@ -1,0 +1,66 @@
+{{> menu}}
+
+<section class="ui two column grid segment">
+      <div class="ui column">
+          <h2>Welcome to the Tango Playlist App!</h2>
+            <p>
+              This app will allow users to create and maintain a Tango collection of Tango playlists.
+            </p>
+            <div class="buttons">
+              <button class="ui blue button">
+                Read more <i class="arrow circle right icon"></i>
+              </button>
+              <button class="ui green button">
+                Like it? <i class="thumbs up icon"></i>
+              </button>
+              <button class="ui red button">
+                Who are you? <i class="user icon"></i>
+              </button>
+            </div>
+          <div id="readmore" class="ui message">
+            <p>
+              So far, there is CRUD (Create, Read, Update, and Delete) functionality running in this app. In the future, users will also be able to create an account, log in and upload images to this app.
+            </p>  
+          </div>
+          <div id="welcomeuser" class="ui message"> </div>
+        
+        <div class="ui divider"></div>
+
+<h3 class="ui center aligned header">The Tango Playlist App now contains:</h3>
+<div class="ui two statistics">
+    <div class="ui huge statistic">
+        <div class="value">
+            {{totalTangoPlaylists}}
+        </div>
+        <div class="label">
+            Tango Playlists
+        </div>
+    </div>
+    <div class="ui huge statistic">
+        <div class="value">
+            {{totalMelodys}}
+        </div>
+        <div class="label">
+            Tangos
+        </div>
+    </div>
+</div>
+        
+        </div>  
+  <div class="ui column">
+    <div class="ui grid">
+      <div class="ui eight wide column">
+        <img class="ui small circular image" src="https://cdn.glitch.com/9ba7382f-fb82-4a5a-a4a0-a8e03177a6b9%2F61H-3pL9ysL.jpg?1554809011078">
+      </div>
+      <div class="ui eight wide column">
+        <img class="ui small circular image" src="https://cdn.glitch.com/9ba7382f-fb82-4a5a-a4a0-a8e03177a6b9%2Feacc2030.jpg?1554808740160">
+      </div>
+      <div class="ui eight wide column">
+        <img class="ui small circular image" src="https://cdn.glitch.com/9ba7382f-fb82-4a5a-a4a0-a8e03177a6b9%2F1200x630bb.jpg?1554808932348">
+      </div>
+      <div class="ui eight wide column">
+        <img class="ui small circular image" src="https://cdn.glitch.com/9ba7382f-fb82-4a5a-a4a0-a8e03177a6b9%2FCS425161-01A-BIG.jpg?1554808740840">
+      </div>
+    </div>
+  </div>
+</section>

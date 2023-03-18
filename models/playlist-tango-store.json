@@ -1,0 +1,32 @@
+{
+  "tangoPlaylistCollection": [
+    {
+      "id": "4228d854-ff45-496a-aeb8-a0b42d099cd7",
+      "title": "New tango playlist",
+      "duration": "25",
+      "melodys": [
+        {
+          "id": "c7704e86-b478-43b8-aa68-8cae78056cd2",
+          "title": "New tango",
+          "artist": "Maestro",
+          "genre": "Classical",
+          "duration": "9"
+        }
+      ]
+    },
+    {
+      "id": "6ac60109-e667-4ed1-a698-649a4986f64a",
+      "title": "n",
+      "duration": "4",
+      "melodys": [
+        {
+          "id": "77783e91-3c1e-4eaf-83fc-ca814b3348ad",
+          "title": "big",
+          "artist": "apple",
+          "genre": "relax",
+          "duration": "3"
+        }
+      ]
+    }
+  ]
+}
