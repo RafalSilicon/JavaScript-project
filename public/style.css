@@ -1,6 +1,6 @@
-/* CSS files add styling rules to your content */
+/* CSS files add styling rules to my content */
 
-body {
+/* body {
   font-family: helvetica, arial, sans-serif;
   margin: 2em;
   background-color: lightgrey;
@@ -11,6 +11,46 @@ h1 {
   color: #373fff;
 }
 
+#info {
+  display: none;
+}
+
+#introduction {
+  display: none;
+}
+.name{
+  padding-top:20px;
+  padding-right:5px;
+  line-height:20px;
+  font-weight:bold;
+  text-transform:capitalize;
+}
+*/
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 1em;
+  background: linear-gradient(#de6262, #ffb88c, #de6262 );
+
+}
+
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
 #readmore {
   display: none;
 }
@@ -18,3 +58,38 @@ h1 {
 #welcomeuser {
   display: none;
 }
+
+.ui.menu .active.item {
+  background: rgba(0, 0, 0, 0.2);
+  /*background: rgba(0, 0, 0, 0.08);*/
+  /*color: rgba(0, 0, 0, 0.95);*/
+  color: #de6262;
+  font-weight: normal;
+  box-shadow: none;
+}
+
+#tablestats {
+  margin-top:2em;
+}
+
+#tablestats .red,  #tablestats .blue  {
+  border:solid #de6262 2px;
+  padding: 0em .5em;
+}
+
+.name{
+  padding-top:20px;
+  padding-right:5px;
+  line-height:20px;
+  font-weight:bold;
+  text-transform:capitalize;
+}
+
+.profilepic{
+  padding-top:15px;
+  padding-right:5px;
+  line-height:20px;
+  font-weight:bold;
+}
+
+

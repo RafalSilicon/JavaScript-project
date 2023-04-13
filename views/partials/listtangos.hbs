@@ -1,56 +1,66 @@
-<table class="ui striped table">
+  {{#if tanda.melodies}} 
+<table class="ui fixed striped table">
   <thead>
     <tr>
       <th class="four wide">Tango</th>
       <th class="four wide">Artist</th>
       <th class="three wide">Genre</th>
       <th class="three wide">Duration</th>
+     
       <th class="one wide"> </th>
       <th class="one wide"> </th>
+      
     </tr>
   </thead>
 <tbody>
-    {{#each tangoPlaylist.melodys}}
-    <form class = "ui stacked segment form" action="/tangoPlaylist/{{../tangoPlaylist.id}}/updatemelody/{{id}}" method="POST">
+    {{#each tanda.melodies}}
+    <form class = "ui stacked segment form" action="/tandas/{{../tanda.id}}/updatemelody/{{id}}" method="POST">
     <tr class="fields">
       <td class="field">
         <span class="ui input">
-         <input type="text" name="title" autofocus required title = "Please include a valid Title" placeholder="Title" value = "{{title}}">
+         <input placeholder="Title" type="text" size="30" name="title" autofocus required value = "{{title}}">
         </span>
       </td>
       <td class="field">
         <span class="ui input">
-          <input type="text" name="artist" required title = "Please include a valid Artist" placeholder="Artist" value = "{{artist}}">
+          <input placeholder="Artist" type="text" size="30" name="artist" required value = "{{artist}}">
         </span>
       </td>
       <td class="field">
         <span class="ui input">
-          <input type="text" name="genre" autofocus required title = "Please include a valid Genre" placeholder="Genre" value = "{{genre}}">         
+          <input placeholder="Genre" type="text" name="genre" required value = "{{genre}}">
         </span>
       </td>
       <td class="field">
         <span class="ui input">
-          <input type="text" name="duration" required title = "Please enter a valid duration" placeholder="Duration" value = "{{duration}}">
+          <input placeholder="Duration" type="text" name="duration" required value = "{{duration}}">
         </span>
       </td>
       <td class="center aligned">
-        <button class="ui submit icon button"><i class="icon pencil alternate"></i></button>
+        
+        <button class="ui submit icon button" style="background-color: transparent;"><i class="ui blue pencil icon alternate"></i></button>
+
       </td>
       <td class="center aligned">
-        <a href="/tangoPlaylist/{{../tangoPlaylist.id}}/deletemelody/{{id}}" class="ui icon button delmelody">
-          <i class="icon trash"></i>
+        
+        <a href="/tanda/{{../tanda.id}}/deletemelody/{{id}}" class="ui trash blue icon delmelody">
+          <i class="ui trash icon"></i>
         </a>
-      </td>
+      </td>  
     </tr>
     </form> 
     {{/each}}
   </tbody>
 </table>
-
 <p>
   <span id="rating"> </span>
-</p>
+</p>       
 
-<button class="ui blue button" id="rateit">
+  <button class="ui blue button" id="rateit">
   Rate it! <i class="star icon"></i>
 </button>
+
+{{/if}}
+{{#unless tanda.melodies}}
+  <h3 class="ui center aligned message">What would you like to dance?  Start adding some tangos!</h3>
+{{/unless}}

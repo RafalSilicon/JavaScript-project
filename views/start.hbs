@@ -1,66 +1,125 @@
 {{> menu}}
-
 <section class="ui two column grid segment">
-      <div class="ui column">
-          <h2>Welcome to the Tango Playlist App!</h2>
-            <p>
-              This app will allow users to create and maintain a Tango collection of Tango playlists.
-            </p>
-            <div class="buttons">
-              <button class="ui blue button">
-                Read more <i class="arrow circle right icon"></i>
-              </button>
-              <button class="ui green button">
-                Like it? <i class="thumbs up icon"></i>
-              </button>
-              <button class="ui red button">
-                Who are you? <i class="user icon"></i>
-              </button>
-            </div>
-          <div id="readmore" class="ui message">
-            <p>
-              So far, there is CRUD (Create, Read, Update, and Delete) functionality running in this app. In the future, users will also be able to create an account, log in and upload images to this app.
-            </p>  
-          </div>
-          <div id="welcomeuser" class="ui message"> </div>
-        
-        <div class="ui divider"></div>
-
-<h3 class="ui center aligned header">The Tango Playlist App now contains:</h3>
-<div class="ui two statistics">
-    <div class="ui huge statistic">
-        <div class="value">
-            {{totalTangoPlaylists}}
-        </div>
-        <div class="label">
-            Tango Playlists
-        </div>
-    </div>
-    <div class="ui huge statistic">
-        <div class="value">
-            {{totalMelodys}}
-        </div>
-        <div class="label">
-            Tangos
-        </div>
-    </div>
-</div>
-        
-        </div>  
   <div class="ui column">
-    <div class="ui grid">
-      <div class="ui eight wide column">
-        <img class="ui small circular image" src="https://cdn.glitch.com/9ba7382f-fb82-4a5a-a4a0-a8e03177a6b9%2F61H-3pL9ysL.jpg?1554809011078">
+    <h2 class="ui header">
+      Welcome to the {{ nonickname}}'s Playlist App! 
+    </h2>
+    <p>
+      This app will allow users to create and maintain a Tango collection of Tango playlists.
+    </p>
+    <div class="buttons">
+      <button class="ui blue button">
+        Info <i class=" info icon"></i>
+      </button>
+      <button class="ui green button">
+        Like us <i class="heart icon"></i>
+      </button>
+      <button class="ui red button">
+        Introduce yourself! <i class="question mark icon"></i>
+      </button>
+    </div>
+    <div id="info" class="ui message" style =  "display:none">
+      <p>
+        This application is created as part of the course Web App Development 1. It works with CRUD (Create, Read, Update, and Delete) functionality. It also allows to create accounts, log in and upload images into this app, and view statistics.
+      </p>  
+    </div>
+    <div id="introduction" class="ui message"  style =  "display:none"></div>
+    <div class="ui divider"></div>
+    
+    <h3 class="ui center aligned header">The Tanda App now contains:
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-..."> <!-- FontAwesome library -->
+    </h3>
+    <div class="ui small statistics">
+      <div class="ui  green statistic">
+        <div class="value">
+          <!--<i class="file audio icon"></i> -->
+          <img src="https://cdn.glitch.global/b468ca6d-6994-47f1-8b39-de80c4b197ee/playlist.png?v=1681338726267">
+          {{totalTandas}}
+        </div>
+        <div class="label">
+          <p>
+            Tandas
+          </p> 
+        </div>
       </div>
-      <div class="ui eight wide column">
-        <img class="ui small circular image" src="https://cdn.glitch.com/9ba7382f-fb82-4a5a-a4a0-a8e03177a6b9%2Feacc2030.jpg?1554808740160">
+      <div class="ui  blue statistic">
+        <div class="value">
+         <!-- <i class="music icon"></i>-->
+ <img src="https://cdn.glitch.global/b468ca6d-6994-47f1-8b39-de80c4b197ee/musical-notes4.png?v=1681338739068">
+        </div>
+        <div class="label">
+          {{totalMelodies}} Tangos
+        </div>
       </div>
-      <div class="ui eight wide column">
-        <img class="ui small circular image" src="https://cdn.glitch.com/9ba7382f-fb82-4a5a-a4a0-a8e03177a6b9%2F1200x630bb.jpg?1554808932348">
+      <div class="ui yellow statistic">
+        <div class="value">
+          <!--<i class="chart line icon"></i> -->
+          
+          <img src="https://cdn.glitch.global/b468ca6d-6994-47f1-8b39-de80c4b197ee/comparative.png?v=1681338745258">
+          {{average}}
+        </div>
+        <div class="label">
+          <p>
+           Average No of Tangos 
+          </p>
+        </div>
       </div>
-      <div class="ui eight wide column">
-        <img class="ui small circular image" src="https://cdn.glitch.com/9ba7382f-fb82-4a5a-a4a0-a8e03177a6b9%2FCS425161-01A-BIG.jpg?1554808740840">
+      <div class="ui red statistic">
+        <div class="label">
+          Tanda with most Tangos
+        </div>
+        <div class="text value">
+          {{largest}}
+        </div>
+      </div>
+      <div class="ui blue statistic">
+        <div class="label">
+          Tanda with least Tangos
+        </div>
+        <div class="text value">
+          {{smallest}}
+        </div>
       </div>
     </div>
   </div>
+  <div class="ui column">
+  <div class="ui grid">
+    <!-- Photo slider container -->
+    <div id="photo-slider" style="padding: 50px 15px 15px 10px; margin-top: 10%;">
+      <!-- Default image -->
+      <img class="active" src="https://cdn.glitch.global/6a84aafb-55d5-4ef0-89b3-6ec18dd40633/white.jpg?v=1679245227305" width="100%" height="100%">
+      <!-- Other images to be displayed in the slider -->
+      <img src="https://cdn.glitch.global/6a84aafb-55d5-4ef0-89b3-6ec18dd40633/The%20Julio%20De%20Caro%20Sextet.jpg?v=1679245242610" width="100%" height="100%" style="display: none;">
+      <img src="https://cdn.glitch.global/b468ca6d-6994-47f1-8b39-de80c4b197ee/zt%20(2).jpg?v=1681338038476" width="100%" height="89%" style="display: none;"> 
+      <img src="https://cdn.glitch.global/b468ca6d-6994-47f1-8b39-de80c4b197ee/dym.jpg?v=1681332367505" width="100%" height="89%" style="display: none;">
+      <img src="https://cdn.glitch.global/b468ca6d-6994-47f1-8b39-de80c4b197ee/zt%20(1).jpg?v=1681337685082" width="100%" height="89%" style="display: none;">
+      
+
+    </div>
+  </div>
+</div>
+
+<!-- Import jQuery library -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- JavaScript code for photo slider -->
+<script>
+$(document).ready(function(){
+  var imageIndex = 0;
+  var images = $("#photo-slider img");
+  
+  // Hide all images except the first one
+  images.not(":first").hide();
+  
+  // Set interval for changing the displayed image
+  setInterval(function(){
+    images.eq(imageIndex).fadeOut(400, function(){
+      // Move to the next image in the sequence
+      imageIndex = (imageIndex + 1) % images.length;
+      // Fade in the new image
+      images.eq(imageIndex).fadeIn(400);
+    });
+  }, 3000);
+});
+</script>
 </section>

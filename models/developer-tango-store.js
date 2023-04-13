@@ -1,13 +1,15 @@
 'use strict';
 
-const developerStore = {
+import logger from '../utils/logger.js';
+import JsonTangoStore from './json-tango-store.js';
 
-  developers: require('./developer-tango-store.json').developers,
+const developerRkStore = {
+  
+  store: new JsonTangoStore('./models/developer-tango-store.json', { rk_Developers: [] }),
+  collection: 'rk_Developers',
 
-  getAllDevelopers() {
-    return this.developers;
+  getAllRkDevelopers() {  
+    return this.store.findRkAll(this.collection);
   },
-
 };
-
-module.exports = developerStore;
+export default developerRkStore;

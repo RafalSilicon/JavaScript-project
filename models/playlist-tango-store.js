@@ -1,54 +1,79 @@
 'use strict';
 
-const _ = require('lodash');
-const JsonStore = require('./json-tango-store');
+import logger from '../utils/logger.js';
+import JsonTangoStore from './json-tango-store.js';
+import cloudinary from 'cloudinary';
 
-const tangoPlaylistStore = {
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
 
-  store: new JsonStore('./models/playlist-tango-store.json', { tangoPlaylistCollection: [] }),
-  collection: 'tangoPlaylistCollection',
+try {
+  const env = require("../.data/.env.json");
+  cloudinary.config(env.cloudinary);
+}
+catch(e) {
+  logger.info('You must provide a Cloudinary credentials file - see README.md');
+  process.exit(1);
+}
 
-  getAllTangoPlaylists() {
-    return this.store.findAll(this.collection);
+const tandaStore = {
+
+  store: new JsonTangoStore('./models/playlist-tango-store.json', { tandaCollection: [] }),
+  collection: 'tandaCollection',
+
+  getAllTandas() {
+    return this.store.findRkAll(this.collection);
   },
 
-  getTangoPlaylist(id) {
-    return this.store.findOneBy(this.collection, { id: id });
-  },
-
-  addTangoPlaylist(tangoPlaylist) {
-    this.store.add(this.collection, tangoPlaylist);
-  },
-
-  removeTangoPlaylist(id) {
-    const tangoPlaylist = this.getTangoPlaylist(id);
-    this.store.remove(this.collection, tangoPlaylist);
-  },
-
-  removeAllTangoPlaylists() {
-    this.store.removeAll(this.collection);
-  },
-
-  addMelody(id, melody) {
-    const tangoPlaylist = this.getTangoPlaylist(id);
-    tangoPlaylist.melodys.push(melody);
+  getTanda(id) {
+    return this.store.findOneRkBy(this.collection, (collection => collection.id === id));
   },
 
   removeMelody(id, melodyId) {
-    const tangoPlaylist = this.getTangoPlaylist(id);
-    const melodys = tangoPlaylist.melodys;
-    _.remove(melodys, { id: melodyId});
+    const arrayMel = "melodies";
+    this.store.removeRkItem(this.collection, id, arrayMel, melodyId);
   },
   
-  editMelody(id, melodyId, updatedMelody) {
-    const tangoPlaylist = this.getTangoPlaylist(id);
-    const melodys = tangoPlaylist.melodys;
-    const index = melodys.findIndex(melody => melody.id === melodyId);
-    melodys[index].title = updatedMelody.title;
-    melodys[index].artist = updatedMelody.artist;
-    melodys[index].genre = updatedMelody.genre;
-    melodys[index].duration = updatedMelody.duration;
+  removeTanda(id) {
+    const tanda = this.getTanda(id);
+    this.store.removeRkCollection(this.collection, tanda);
+  },
+ 
+  removeAllTandas() {
+    this.store.removeRkAll(this.collection);
+  },
+  
+  async addTanda(tanda, response) {
+  function uploader(){
+    return new Promise(function(resolve, reject) {  
+      cloudinary.uploader.upload(tanda.picture.tempFilePath,function(result,err){
+        if(err){console.log(err);}
+        resolve(result);
+      });
+    });
   }
+  let result = await uploader();
+  logger.info('cloudinary result', result);
+  tanda.picture = result.url;
+
+  this.store.addRkCollection(this.collection, tanda);
+  response();
+},
+
+  addMelody(id, melody) {
+    const arrayMel = "melodies";
+    this.store.addRkItem(this.collection, id, arrayMel, melody);
+  },
+
+  editMelody(id, melodyId, updatedMelody) {
+    const arrayMel = "melodies";
+
+    this.store.editRkItem(this.collection, id, melodyId, arrayMel, updatedMelody);
+  },
+  
+  getUserPlaylists(userid) {
+    return this.store.findRkBy(this.collection, (tanda => tanda.userid === userid));
+  },
 };
 
-module.exports = tangoPlaylistStore;
+export default tandaStore;
