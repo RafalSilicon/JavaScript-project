@@ -1,53 +1,68 @@
 'use strict';
 
-const logger= require('../utils/logger');
-const uuid = require('uuid');
-const tangoPlaylistStore = require('../models/playlist-tango-store');
+import logger from '../utils/logger.js';
+import { v4 as uuidv4 } from 'uuid';
+import tandaStore from '../models/playlist-tango-store.js';
+import accounts from './accounts.js';
 
-const tangoPlaylist = {
+const tanda = {
   index(request, response) {
-    const tangoPlaylistId = request.params.id;
-    logger.debug('Tango Playlist id = ' + tangoPlaylistId);
-    const viewData = {
-      title: 'Tango Playlist',
-      tangoPlaylist: tangoPlaylistStore.getTangoPlaylist(tangoPlaylistId),
+    const tandaId = request.params.id;
+    logger.debug('Tanda id = ' + tandaId);
+    const loggedInUser = accounts.getCurrentRkUser(request);
+
+    let tanda = tandaStore.getTanda(tandaId)
+    let totDuration = 0;
+    for (let melody of tanda.melodies) {
+        totDuration += parseFloat(melody.duration)
+    }
+    
+    const viewDataRk = {
+      title: 'Tanda',
+      tanda: tanda,
+      Duration: totDuration,
+      fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName + ' - ' + loggedInUser.nickname,
+      picture: loggedInUser.picture
     };
-    logger.info('about to render', viewData.tangoPlaylist);
-    response.render('tangoPlaylist', viewData);
+  
+    response.render('tanda', viewDataRk);
   },
+  
     deleteMelody(request, response) {
-    const tangoPlaylistId = request.params.id;
+    const tandaId = request.params.id;
     const melodyId = request.params.melodyid;
-    logger.debug(`Deleting Tango ${melodyId} from Tango Playlist ${tangoPlaylistId}`);
-    tangoPlaylistStore.removeMelody(tangoPlaylistId, melodyId);
-    response.redirect('/tangoPlaylist/' + tangoPlaylistId);
+    logger.debug(`Deleting Tango ${melodyId} from Tanda ${tandaId}`);
+    tandaStore.removeMelody(tandaId, melodyId);
+    response.redirect('/tanda/' + tandaId);
   },
-    addTangoMelody(request, response) {
-    const tangoPlaylistId = request.params.id;
-    const tangoPlaylist = tangoPlaylistStore.getTangoPlaylist(tangoPlaylistId);
+    addMelody(request, response) {
+    const tandaId = request.params.id;
+    const tanda = tandaStore.getTanda(tandaId);
     const newMelody = {
-      id: uuid(),
+      id: uuidv4(),
       title: request.body.title,
       artist: request.body.artist,
       genre: request.body.genre,
       duration: request.body.duration
     };
-    tangoPlaylistStore.addTangoMelody(tangoPlaylistId, newMelody);
-    response.redirect('/tangoPlaylist/' + tangoPlaylistId);
-  },
+    tandaStore.addMelody(tandaId, newMelody);
+    response.redirect('/tanda/' + tandaId);
+    },
   updateMelody(request, response) {
-    const tangoPlaylistId = request.params.id;
+    const tandaId = request.params.id;
     const melodyId = request.params.melodyid;
     logger.debug("updating melody " + melodyId);
     const updatedMelody = {
+      id: melodyId,
       title: request.body.title,
       artist: request.body.artist,
       genre: request.body.genre,
-      duration: request.body.duration
+      duration: request.body.duration,
+      
     };
-    tangoPlaylistStore.editMelody(tangoPlaylistId, melodyId, updatedMelody);
-    response.redirect('/tangoPlaylist/' + tangoPlaylistId);
+    tandaStore.editMelody(tandaId, melodyId, updatedMelody);
+    response.redirect('/tanda/' + tandaId);
   }
 };
 
-module.exports = tangoPlaylist;
+export default tanda;

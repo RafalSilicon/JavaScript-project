@@ -1,30 +1,66 @@
 {
-  "tangoPlaylistCollection": [
+  "tandaCollection": [
     {
-      "id": "4228d854-ff45-496a-aeb8-a0b42d099cd7",
-      "title": "New tango playlist",
-      "duration": "25",
-      "melodys": [
+      "id": "afaa4380-ea34-4d52-908a-914b720c3254",
+      "userid": "f6addd03-2266-4820-a9c9-7d1847d63bee",
+      "title": "Test 1",
+      "picture": "http://res.cloudinary.com/rafal-si/image/upload/v1681254047/jggguaspkc08xzvxdj11.jpg",
+      "date": "2023-04-10T15:00:37.043Z",
+      "melodies": [
         {
-          "id": "c7704e86-b478-43b8-aa68-8cae78056cd2",
-          "title": "New tango",
-          "artist": "Maestro",
-          "genre": "Classical",
-          "duration": "9"
+          "id": "dc6ae16d-563b-4e80-a6bf-f5d146bc0cc9",
+          "title": "g",
+          "artist": "g",
+          "genre": "kyhk",
+          "duration": "7"
         }
       ]
     },
     {
-      "id": "6ac60109-e667-4ed1-a698-649a4986f64a",
-      "title": "n",
-      "duration": "4",
-      "melodys": [
+      "id": "c76cd42d-1418-4481-841d-94b5210c2bd5",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "test 2",
+      "picture": "http://res.cloudinary.com/rafal-si/image/upload/v1681313440/btkuampu1koqpksyzael.jpg",
+      "date": "2023-04-12T15:30:39.879Z",
+      "melodies": [
         {
-          "id": "77783e91-3c1e-4eaf-83fc-ca814b3348ad",
-          "title": "big",
-          "artist": "apple",
-          "genre": "relax",
+          "id": "e2c90571-6fb0-42af-86d9-634bd4226d71",
+          "title": "agaf",
+          "artist": "dA",
+          "genre": "dddddddd",
+          "duration": "1"
+        }
+      ]
+    },
+    {
+      "id": "ada2f85e-736e-418a-8901-19ae9aef00e1",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "Test 3",
+      "picture": "http://res.cloudinary.com/rafal-si/image/upload/v1681386968/gt0vvx7k9nhqdsloky7r.jpg",
+      "date": "2023-04-13T11:56:08.678Z",
+      "melodies": [
+        {
+          "id": "20b77f5d-008e-4be7-8826-317c7423c522",
+          "title": "New milonga",
+          "artist": "Trolio",
+          "genre": "milonga",
           "duration": "3"
+        }
+      ]
+    },
+    {
+      "id": "419b8e92-3fff-49b0-91d6-9232157b459a",
+      "userid": "e72412e3-e3c1-4487-bbf5-daaeb017ea0d",
+      "title": "test 5",
+      "picture": "http://res.cloudinary.com/rafal-si/image/upload/v1681394493/cuvkdabzfaic0tultsej.jpg",
+      "date": "2023-04-13T14:01:33.773Z",
+      "melodies": [
+        {
+          "id": "80577560-da04-491d-8ff7-6093ae3d6d6f",
+          "title": "fgfg",
+          "artist": "bvhb",
+          "genre": "nfn",
+          "duration": "67"
         }
       ]
     }

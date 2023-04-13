@@ -1,0 +1,30 @@
+{
+  "users": [
+    {
+      "firstName": "homer",
+      "lastName": "simpson",
+      "nickname": "HoMeR",
+      "email": "homer@simpson.com",
+      "password": "secret",
+      "picture": "https://res.cloudinary.com/web-app-dev-1/image/upload/v1648551677/tyzsjsrcyhfnyehtjr0v.jpg",
+      "id": "3ad52697-6d98-4d80-8273-084de55a86c0"
+    },
+    {
+      "firstName": "Certy",
+      "lastName": "Verty",
+      "nickname": "Ver",
+      "email": "vrt@yjg.yt",
+      "password": "Test123",
+      "id": "5b11a3a2-5cde-42f7-a433-b945c860188a"
+    },
+    {
+      "firstName": "Rafal",
+      "lastName": "Tatau",
+      "nickname": "Rav",
+      "email": "rafaltatau@home.pl",
+      "password": "1Dghhdhs",
+      "picture": "http://res.cloudinary.com/rafal-si/image/upload/v1681388759/pm7qiqclau8xa2bjqgub.jpg",
+      "id": "e72412e3-e3c1-4487-bbf5-daaeb017ea0d"
+    }
+  ]
+}
