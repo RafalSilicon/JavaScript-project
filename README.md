@@ -30,10 +30,11 @@ https://cso.org/experience/article/7731/from-argentina-to-the-world-the-tango
 https://www.pxfuel.com/en/desktop-wallpaper-hzhjf
 
 https://www.shutterstock.com/search/argentine-tango
+https://latitudtango.com/wp-content/uploads/2018/08/old_tango_2.jpg
 
 https://open.spotify.com/playlist/1vwUyO1bi3a8eRPCFXKFI9
 
 https://open.spotify.com/artist/7zsTaSj1Q4jSCjbj5GtmoN
 
-Meanwhile, some of the photos used as illustrations for the tandas and icons were downloaded 
+Meanwhile, some of the photos used as illustrations for the tandas and icons were downloaded
 as a part of free trial from the iStock website: https://www.istockphoto.com
