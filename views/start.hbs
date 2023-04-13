@@ -18,53 +18,43 @@
         Introduce yourself! <i class="question mark icon"></i>
       </button>
     </div>
-    <div id="info" class="ui message" style =  "display:none">
+    <div id="info" class="ui message">
       <p>
         This application is created as part of the course Web App Development 1. It works with CRUD (Create, Read, Update, and Delete) functionality. It also allows to create accounts, log in and upload images into this app, and view statistics.
       </p>  
     </div>
-    <div id="introduction" class="ui message"  style =  "display:none"></div>
+    <div id="introduction" class="ui message"></div>
     <div class="ui divider"></div>
     
     <h3 class="ui center aligned header">The Tanda App now contains:
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-..."> <!-- FontAwesome library -->
     </h3>
     <div class="ui small statistics">
-      <div class="ui  green statistic">
+      <div  class="ui statistic">
         <div class="value">
-          <!--<i class="file audio icon"></i> -->
           <img src="https://cdn.glitch.global/b468ca6d-6994-47f1-8b39-de80c4b197ee/playlist.png?v=1681338726267">
-          {{totalTandas}}
         </div>
         <div class="label">
-          <p>
-            Tandas
-          </p> 
+           <font style="color: green">{{totalTandas}} Tandas</font>
         </div>
       </div>
-      <div class="ui  blue statistic">
+      <div class="ui statistic">
         <div class="value">
-         <!-- <i class="music icon"></i>-->
- <img src="https://cdn.glitch.global/b468ca6d-6994-47f1-8b39-de80c4b197ee/musical-notes4.png?v=1681338739068">
+         <img src="https://cdn.glitch.global/b468ca6d-6994-47f1-8b39-de80c4b197ee/musical-notes4.png?v=1681338739068">
         </div>
         <div class="label">
-          {{totalMelodies}} Tangos
+          <font style="color: red">{{totalMelodies}} Tangos</font> 
         </div>
       </div>
       <div class="ui yellow statistic">
-        <div class="value">
-          <!--<i class="chart line icon"></i> -->
-          
+        <div class="value"> 
           <img src="https://cdn.glitch.global/b468ca6d-6994-47f1-8b39-de80c4b197ee/comparative.png?v=1681338745258">
-          {{average}}
         </div>
         <div class="label">
-          <p>
-           Average No of Tangos 
-          </p>
+          <font style="color: navy">{{average}} Average No of Tangos</font> 
         </div>
       </div>
-      <div class="ui red statistic">
+      <div class="ui yellow statistic">
         <div class="label">
           Tanda with most Tangos
         </div>
@@ -85,15 +75,16 @@
   <div class="ui column">
   <div class="ui grid">
     <!-- Photo slider container -->
-    <div id="photo-slider" style="padding: 50px 15px 15px 10px; margin-top: 10%;">
+    <div id="photo-slider"  style="margin-top: 10%;" >
       <!-- Default image -->
-      <img class="active" src="https://cdn.glitch.global/6a84aafb-55d5-4ef0-89b3-6ec18dd40633/white.jpg?v=1679245227305" width="100%" height="100%">
+      <img class="active" src="https://cdn.glitch.global/b468ca6d-6994-47f1-8b39-de80c4b197ee/white%20(2).jpg?v=1681421641807">
       <!-- Other images to be displayed in the slider -->
-      <img src="https://cdn.glitch.global/6a84aafb-55d5-4ef0-89b3-6ec18dd40633/The%20Julio%20De%20Caro%20Sextet.jpg?v=1679245242610" width="100%" height="100%" style="display: none;">
-      <img src="https://cdn.glitch.global/b468ca6d-6994-47f1-8b39-de80c4b197ee/zt%20(2).jpg?v=1681338038476" width="100%" height="89%" style="display: none;"> 
-      <img src="https://cdn.glitch.global/b468ca6d-6994-47f1-8b39-de80c4b197ee/dym.jpg?v=1681332367505" width="100%" height="89%" style="display: none;">
-      <img src="https://cdn.glitch.global/b468ca6d-6994-47f1-8b39-de80c4b197ee/zt%20(1).jpg?v=1681337685082" width="100%" height="89%" style="display: none;">
-      
+      <img src="https://cdn.glitch.global/b468ca6d-6994-47f1-8b39-de80c4b197ee/zt%20(4).jpg?v=1681421664158" style="display: none;">
+      <img src="https://cdn.glitch.global/b468ca6d-6994-47f1-8b39-de80c4b197ee/The%20Julio%20De%20Caro%20Sextet%20(2).jpg?v=1681421634395" style="display: none;"> 
+      <img src="https://cdn.glitch.global/b468ca6d-6994-47f1-8b39-de80c4b197ee/dym%20(2).jpg?v=1681421626983" style="display: none;">
+      <img src="https://cdn.glitch.global/b468ca6d-6994-47f1-8b39-de80c4b197ee/DSC_0469%20(2).JPG?v=1681422828396" style="display: none;">
+      <img src="https://cdn.glitch.global/b468ca6d-6994-47f1-8b39-de80c4b197ee/Zotto%20(2).jpg?v=1681421655383" style="display: none;">
+      <img src="https://cdn.glitch.global/b468ca6d-6994-47f1-8b39-de80c4b197ee/Anibal%20Troilo%20(2).jpg?v=1681422822579" style="display: none;">
 
     </div>
   </div>
