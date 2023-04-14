@@ -20,10 +20,17 @@ const tandaStore = {
 
   store: new JsonTangoStore('./models/playlist-tango-store.json', { tandaCollection: [] }),
   collection: 'tandaCollection',
-
-  getAllTandas() {
+  //general ststistics
+  getAllTandasForEveryone() {
     return this.store.findRkAll(this.collection);
   },
+  // user statistics
+  getAllTandas(userid) {
+    
+    
+    return this.store.findBy(this.collection, (collection => collection.userid === userid));
+  },
+ 
 
   getTanda(id) {
     return this.store.findOneRkBy(this.collection, (collection => collection.id === id));
