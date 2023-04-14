@@ -15,7 +15,9 @@ const dashboard = {
     // display confirmation message in log
     logger.info('dashboard rendering');    
     const loggedInUser = accounts.getCurrentRkUser(request);
-    if (loggedInUser) {       
+    if (loggedInUser) {   
+      
+      
     // create view data object (contains data to be sent to the view e.g. page title)
     const viewDataRk = {
       title: 'Tanda App Dashboard',

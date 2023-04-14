@@ -17,7 +17,7 @@ const start = {
     
     if(loggedInUser){   
     // app statistics calculations
-    const tandas = tandaStore.getAllTandas();
+    const tandas = tandaStore.getAllTandas(loggedInUser.id);
     let numTandas = tandas.length;
     let numMelodies = 0;
     for (let item of tandas) {

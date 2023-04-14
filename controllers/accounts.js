@@ -2,6 +2,7 @@
 
 import logger from '../utils/logger.js';
 import userRkStore from '../models/user-rk-store.js';
+import tandaStore from '../models/playlist-tango-store.js';
 import { v4 as uuidv4 } from 'uuid';
 
 //create an accounts object
@@ -9,8 +10,58 @@ const accounts = {
 
   //index function to render index page
   index(request, response) {
+    const tandas = tandaStore.getAllTandasForEveryone();
+    let numTandas = tandas.length;
+    let numMelodies = 0;
+    for (let item of tandas) {
+        numMelodies += item.melodies.length;
+    }  
+      
+       let average = 0;
+   if (numTandas > 0) {
+    average = numMelodies / numTandas;
+    average = average.toFixed(2);
+   }
+   
+     
+    let currentLargest = 0;
+    let largestTandaTitle = "";
+    for (let tanda of tandas) {
+      if (tanda.melodies.length > currentLargest) {
+        currentLargest = tanda.melodies.length;
+      }
+      
+      
+    }
+    for (let tanda of tandas) {
+      if (tanda.melodies.length === currentLargest) {
+        largestTandaTitle += tanda.title + ", ";
+      }
+    }
+    
+    let currentSmallest = 1;
+      if (numTandas > 0) {
+      currentSmallest = tandas[0].melodies.length;
+    } 
+    let smallestTandaTitle = "";
+
+    for (let tanda of tandas) {
+      if (tanda.melodies.length < currentSmallest) {
+        currentSmallest = tanda.melodies.length;
+      }
+    }
+    for (let tanda of tandas) {
+      if (tanda.melodies.length === currentSmallest) {
+        smallestTandaTitle += tanda.title + ", ";
+      }
+    }  
     const viewDataRk = {
       title: 'Login or Signup',
+      totalTandas: numTandas,
+        totalMelodies: numMelodies,
+        average: average,
+        largest: largestTandaTitle,
+        smallest: smallestTandaTitle,
     };
     response.render('index', viewDataRk);
   },

@@ -28,7 +28,9 @@ body {
   margin: 2em;
   background: linear-gradient(#de6262, #ffb88c, #de6262 );
 }
-
+#sectionGreen{
+  background: #de6200;
+}
 /* images and videos max out at full width */
 img,
 video {
