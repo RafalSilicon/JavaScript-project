@@ -28,7 +28,28 @@
           "title": "New milonga",
           "artist": "Trolio",
           "genre": "milonga",
-          "duration": "3"
+          "duration": "03:11"
+        },
+        {
+          "id": "7d7ffc5e-8be0-4bcc-a4ac-1a3cd46a5cb4",
+          "title": "Tango ",
+          "artist": "Trolio",
+          "genre": "tango",
+          "duration": "14:30"
+        },
+        {
+          "id": "11aaf8ca-3292-461c-bf79-dce5bce70764",
+          "title": "tan",
+          "artist": "sss",
+          "genre": "ddd",
+          "duration": "4"
+        },
+        {
+          "id": "d96a6986-1f6d-4811-8d56-1d620d7d3d14",
+          "title": "rrwr",
+          "artist": "dds",
+          "genre": "gdf",
+          "duration": "11:35"
         }
       ]
     },
@@ -52,28 +73,28 @@
           "title": "assa",
           "artist": "as",
           "genre": "as23",
-          "duration": "04:02"
+          "duration": "23"
         },
         {
           "id": "b1fa5e4f-9069-4074-89ef-f63155271035",
           "title": "tango ta",
           "artist": "Romero",
           "genre": "tango ",
-          "duration": "02:25"
+          "duration": "3"
         },
         {
           "id": "c9f9f662-29d9-4d88-973c-a12be10e66c0",
           "title": "sf",
           "artist": "zfz",
           "genre": "xf",
-          "duration": "03:55"
+          "duration": "99"
         },
         {
           "id": "2c70d383-6ae2-438f-8c55-1e6b861aa3b8",
           "title": "hf",
           "artist": "gf",
           "genre": "gf",
-          "duration": "04:01"
+          "duration": "88"
         }
       ]
     },
@@ -126,7 +147,7 @@
           "title": "Tango Test 2",
           "artist": "zzzzzzz",
           "genre": "tango",
-          "duration": "02:15"
+          "duration": "03:17"
         }
       ]
     }

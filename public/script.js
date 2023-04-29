@@ -62,3 +62,26 @@ ratebtn &&
 $(".delmelody").click(() => confirm('Really delete this tango?'))
 
 $(".deltanda").click(() => confirm('Really delete this tango playlist?'))
+
+
+
+
+
+
+$(document).ready(function(){
+  var imageIndex = 0;
+  var images = $("#photo-slider img");
+  
+  // Hide all images except the first one
+  images.not(":first").hide();
+  
+  // Set interval for changing the displayed image
+  setInterval(function(){
+    images.eq(imageIndex).fadeOut(400, function(){
+      // Move to the next image in the sequence
+      imageIndex = (imageIndex + 1) % images.length;
+      // Fade in the new image
+      images.eq(imageIndex).fadeIn(400);
+    });
+  }, 3000);
+});

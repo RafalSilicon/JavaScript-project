@@ -28,6 +28,9 @@ const userRkStore = {
   getAllRkUsers() {
     return this.store.findRkAll(this.collection);
   },
+  getNumUsers(){
+    return this.store.findRkAll(this.collection).length;
+  },
 
   getUserByRkId(id) {
     return this.store.findOneRkBy(this.collection, (user => user.id === id));

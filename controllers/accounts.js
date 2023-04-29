@@ -4,7 +4,7 @@ import logger from '../utils/logger.js';
 import userRkStore from '../models/user-rk-store.js';
 import tandaStore from '../models/playlist-tango-store.js';
 import { v4 as uuidv4 } from 'uuid';
-
+import userStore from '../models/user-rk-store.js';
 //create an accounts object
 const accounts = {
 
@@ -58,6 +58,7 @@ const accounts = {
     const viewDataRk = {
       title: 'Login or Signup',
       totalTandas: numTandas,
+      numUsers: userStore.getNumUsers(),
         totalMelodies: numMelodies,
         average: average,
         largest: largestTandaTitle,
