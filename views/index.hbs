@@ -1,53 +1,84 @@
 {{> welcomemenu }}
 
 <section class="ui center aligned middle aligned segment">
-  <p> Sign up or Log in... {{numUsers}}</p>
+  <p> Sign up or Log in... </p>
 </section>
+    <h2 class="ui left aligned header">The Tanda App now contains:
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-..."> <!-- FontAwesome library -->
+    </h2>
+<div style="display: flex;">
+  <table style="flex: 1;">
+      <div class="ui small statistics">
+         <tr>
+          <td class="right aligned">
+            <div class="ui tiny image">
+              <img src="https://cdn.glitch.global/b468ca6d-6994-47f1-8b39-de80c4b197ee/playlist.png?v=1681338726267" style="margin-left: 40; padding: 0; width: 50%">
+            </div>
+          </td>
+         <td style="text-align: left; margin-left: 0">
+            <div class="ui statistic">
+              <div class="label" style="color: navy">
+              - Tandas Total : {{totalTandas}}
+              </div>
+            </div>
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="right aligned">
+            <div class="ui tiny image">
+              <img src="https://cdn.glitch.global/b468ca6d-6994-47f1-8b39-de80c4b197ee/musical-notes4.png?v=1681338739068" style="margin-left: 40; padding: 0; width: 50%">
+            </div>
+          </td>
+          <td>
+            <div class="ui statistic ">
+              <div class="label" style="color: navy">
+                - Tangos Total : {{totalMelodies}}
+              </div>
+            </div>
+          </td>
+        </tr>  
+        
+        <tr>
+          <td class="right aligned">
+            <div class="ui tiny image">
+              <img src="https://cdn.glitch.global/bb9754f1-c217-43d5-856d-7e1e098bf458/customers.png?v=1682813511811" style="margin-left: 40; padding: 0; width: 50%">
+            </div>
+          </td>
+          <td>
+            <div class="ui statistic ">
+              <div class="label" style="color: navy">
+               - Number of users : {{numUsers}} 
+              </div>
+            </div>
+          </td>
+        </tr>  
+        
+        <tr>
+          <td class="right aligned">
+            <div class="ui tiny image">
+              <img src="https://cdn.glitch.global/b468ca6d-6994-47f1-8b39-de80c4b197ee/comparative.png?v=1681338745258" style="margin-left: 40; padding: 0; width: 55%">
+            </div>
+          </td>
+          <td>
+            <div class="ui statistic ">
+              <div class="label" style="color: navy">
+               - Average No of Tangos : {{average}} 
+              </div>
+            </div>
+          </td>
+        </tr>        
+    </div>   
+  </table>       
+  <table  style="flex: 1;">
+    <tbody>
+      <tr>
+        <td>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/BGO2EWyDPOE?autoplay=1&volume=20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>  
 
 
-<h3 class="ui center aligned header">The Tanda App now contains:
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-..."> <!-- FontAwesome library -->
-    </h3>
-    <div class="ui small statistics">
-      <div  class="ui statistic">
-        <div class="value">
-          <img src="https://cdn.glitch.global/b468ca6d-6994-47f1-8b39-de80c4b197ee/playlist.png?v=1681338726267">
-        </div>
-        <div class="label">
-           <font style="color: green">{{totalTandas}} Tandas</font>
-        </div>
-      </div>
-      <div class="ui statistic">
-        <div class="value">
-         <img src="https://cdn.glitch.global/b468ca6d-6994-47f1-8b39-de80c4b197ee/musical-notes4.png?v=1681338739068">
-        </div>
-        <div class="label">
-          <font style="color: red">{{totalMelodies}} Tangos</font> 
-        </div>
-      </div>
-      <div class="ui yellow statistic">
-        <div class="value"> 
-          <img src="https://cdn.glitch.global/b468ca6d-6994-47f1-8b39-de80c4b197ee/comparative.png?v=1681338745258">
-        </div>
-        <div class="label">
-          <font style="color: navy">{{average}} Average No of Tangos</font> 
-        </div>
-      </div>
-      /!-- ponizsze wywalic --/
-      <div class="ui yellow statistic">
-        <div class="label">
-          Tanda with most Tangos
-        </div>
-        <div class="text value">
-          {{largest}}
-        </div>
-      </div>
-      <div class="ui blue statistic">
-        <div class="label">
-          Tanda with least Tangos
-        </div>
-        <div class="text value">
-          {{smallest}}
-        </div>
-      </div>
-    </div>

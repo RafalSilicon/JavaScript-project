@@ -73,44 +73,19 @@
     </div>
   </div>
   <div class="ui column">
-  <div class="ui grid">
+    <div class="ui grid">
     <!-- Photo slider container -->
-    <div id="photo-slider"  style="margin: 15% 1% 4%;" >
+      <div id="photo-slider"  style="margin: 15% 1% 4%;" >
       <!-- Default image -->
-      <img class="active" src="https://cdn.glitch.global/b468ca6d-6994-47f1-8b39-de80c4b197ee/white%20(2).jpg?v=1681421641807">
+        <img class="active" src="https://cdn.glitch.global/b468ca6d-6994-47f1-8b39-de80c4b197ee/white%20(2).jpg?v=1681421641807">
       <!-- Other images to be displayed in the slider -->
-      <img src="https://cdn.glitch.global/b468ca6d-6994-47f1-8b39-de80c4b197ee/zt%20(4).jpg?v=1681421664158" style="display: none;">
-      <img src="https://cdn.glitch.global/b468ca6d-6994-47f1-8b39-de80c4b197ee/The%20Julio%20De%20Caro%20Sextet%20(2).jpg?v=1681421634395" style="display: none;"> 
-      <img src="https://cdn.glitch.global/b468ca6d-6994-47f1-8b39-de80c4b197ee/dym%20(2).jpg?v=1681421626983" style="display: none;">
-      <img src="https://cdn.glitch.global/b468ca6d-6994-47f1-8b39-de80c4b197ee/DSC_0469%20(2).JPG?v=1681422828396" style="display: none;">
-      <img src="https://cdn.glitch.global/b468ca6d-6994-47f1-8b39-de80c4b197ee/Zotto%20(2).jpg?v=1681421655383" style="display: none;">
-      <img src="https://cdn.glitch.global/b468ca6d-6994-47f1-8b39-de80c4b197ee/Anibal%20Troilo%20(2).jpg?v=1681422822579" style="display: none;">
-
+        <img src="https://cdn.glitch.global/b468ca6d-6994-47f1-8b39-de80c4b197ee/zt%20(4).jpg?v=1681421664158" style="display: none;">
+        <img src="https://cdn.glitch.global/b468ca6d-6994-47f1-8b39-de80c4b197ee/The%20Julio%20De%20Caro%20Sextet%20(2).jpg?v=1681421634395" style="display: none;"> 
+        <img src="https://cdn.glitch.global/b468ca6d-6994-47f1-8b39-de80c4b197ee/dym%20(2).jpg?v=1681421626983" style="display: none;">
+        <img src="https://cdn.glitch.global/b468ca6d-6994-47f1-8b39-de80c4b197ee/DSC_0469%20(2).JPG?v=1681422828396" style="display: none;">
+        <img src="https://cdn.glitch.global/b468ca6d-6994-47f1-8b39-de80c4b197ee/Zotto%20(2).jpg?v=1681421655383" style="display: none;">
+        <img src="https://cdn.glitch.global/b468ca6d-6994-47f1-8b39-de80c4b197ee/Anibal%20Troilo%20(2).jpg?v=1681422822579" style="display: none;">
+      </div>
     </div>
   </div>
-</div>
-
-<!-- Import jQuery library -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-<!-- JavaScript code for photo slider -->
-<script>
-$(document).ready(function(){
-  var imageIndex = 0;
-  var images = $("#photo-slider img");
-  
-  // Hide all images except the first one
-  images.not(":first").hide();
-  
-  // Set interval for changing the displayed image
-  setInterval(function(){
-    images.eq(imageIndex).fadeOut(400, function(){
-      // Move to the next image in the sequence
-      imageIndex = (imageIndex + 1) % images.length;
-      // Fade in the new image
-      images.eq(imageIndex).fadeIn(400);
-    });
-  }, 3000);
-});
-</script>
 </section>

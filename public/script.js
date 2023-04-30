@@ -63,11 +63,6 @@ $(".delmelody").click(() => confirm('Really delete this tango?'))
 
 $(".deltanda").click(() => confirm('Really delete this tango playlist?'))
 
-
-
-
-
-
 $(document).ready(function(){
   var imageIndex = 0;
   var images = $("#photo-slider img");
@@ -77,11 +72,11 @@ $(document).ready(function(){
   
   // Set interval for changing the displayed image
   setInterval(function(){
-    images.eq(imageIndex).fadeOut(400, function(){
+    images.eq(imageIndex).fadeOut(550, function(){
       // Move to the next image in the sequence
       imageIndex = (imageIndex + 1) % images.length;
       // Fade in the new image
-      images.eq(imageIndex).fadeIn(400);
+      images.eq(imageIndex).fadeIn(550);
     });
   }, 3000);
 });

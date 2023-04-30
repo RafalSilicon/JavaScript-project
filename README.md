@@ -13,7 +13,9 @@ Rafał Krzempek
 Student No: 20096679
 
 Glossary:
+
 Tango - a piece of music (song) that is in the style characteristic of Argentine Tango.
+
 Tanda - a playlist of 3-4 tangos.
 
 For Assignment 2 I used images related to the tango theme from free web stocks.
@@ -38,3 +40,5 @@ https://open.spotify.com/artist/7zsTaSj1Q4jSCjbj5GtmoN
 
 Meanwhile, some of the photos used as illustrations for the tandas and icons were downloaded
 as a part of free trial from the iStock website: https://www.istockphoto.com
+
+icons: https://www.freepik.com/

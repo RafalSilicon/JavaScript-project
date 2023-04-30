@@ -62,9 +62,7 @@ const start = {
         smallestTandaTitle += tanda.title + ", ";
       }
     }  
-      
-    
-      
+ 
       // create view data object (contains data to be sent to the view e.g. page title)
     const viewDataRk = {
         title: 'Welcome to the Tanda App!',

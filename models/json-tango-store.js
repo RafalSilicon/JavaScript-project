@@ -65,10 +65,7 @@ class JsonTangoStore {
     const results = this.db.data[collection].filter(filter);
     return results;
   }  
-  
-  
 }
-
 export default JsonTangoStore;
   
   
