@@ -1,6 +1,9 @@
-<nav class="ui menu">
+<nav class="ui menu" id = "sectionGrey">
   <header class="ui header item"> <a href="/start">Tanda App </a></header>
-  <div class="right menu">
+    <a href ="https://radiotangouno.pl/en/" target="_blank">
+      <span class="vinyl"><img src="https://cdn.glitch.global/bb9754f1-c217-43d5-856d-7e1e098bf458/turntable.png?v=1682816070763"></span>
+    </a>
+    <div class="right menu">
     <span class="name">{{fullname}}</span>
     <span class="profilepic"><img src="{{picture}}" class="ui avatar image"></span>
     <a id="dashboard" class="item" href="/dashboard"> Dashboard  </a>
@@ -8,7 +11,6 @@
     <a id="logout" class="item" href="/logout"> Logout </a>
   </div>
 </nav>
-
 <script>
    document.querySelector("#{{id}}").classList.add("active");
 </script>

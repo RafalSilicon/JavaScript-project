@@ -60,12 +60,5 @@ const userRkStore = {
   this.store.addRkCollection(this.collection, user);
   response();
 },
-
-  
-  
-  
-  
-  
 };
-
 export default userRkStore;

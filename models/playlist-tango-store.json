@@ -1,161 +1,298 @@
 {
   "tandaCollection": [
     {
-      "id": "c76cd42d-1418-4481-841d-94b5210c2bd5",
-      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "title": "test 2",
-      "picture": "http://res.cloudinary.com/rafal-si/image/upload/v1681313440/btkuampu1koqpksyzael.jpg",
-      "date": "2023-04-12T15:30:39.879Z",
+      "id": "28d0e709-8e4b-489a-94ef-1d035aa5f5bf",
+      "userid": "1d39f87c-6134-48cc-a2a3-4d68e4be7172",
+      "title": "Porque la Quise Tanto",
+      "picture": "http://res.cloudinary.com/rafal-si/image/upload/v1682868201/bq9vhyykocosio8uzjf9.jpg",
+      "date": "2023-04-30T15:23:20.950Z",
       "melodies": [
         {
-          "id": "e2c90571-6fb0-42af-86d9-634bd4226d71",
-          "title": "agaf",
-          "artist": "dA",
-          "genre": "dddddddd",
-          "duration": "1"
+          "id": "fd8f4350-4b36-46c7-af63-e5203b08f716",
+          "title": "Nocturna",
+          "artist": "Anibal Troilo",
+          "genre": "miilonga",
+          "duration": "02:42"
+        },
+        {
+          "id": "c48f82ea-c649-44e6-bc06-3b1868668f86",
+          "title": "Melancolico",
+          "artist": "Anibal Troilo",
+          "genre": "tango",
+          "duration": "03:18"
+        },
+        {
+          "id": "e0977a80-3c21-4836-9732-eb1b60f48016",
+          "title": "La bordona",
+          "artist": "Anibal Troilo",
+          "genre": "tango",
+          "duration": "03:25"
+        },
+        {
+          "id": "367eb96e-a3f5-41ee-837b-fe379cca648f",
+          "title": "Fueye",
+          "artist": "Anibal Troilo",
+          "genre": "tango",
+          "duration": "03:06"
         }
       ]
     },
     {
-      "id": "ada2f85e-736e-418a-8901-19ae9aef00e1",
-      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "title": "Test 3",
-      "picture": "http://res.cloudinary.com/rafal-si/image/upload/v1681386968/gt0vvx7k9nhqdsloky7r.jpg",
-      "date": "2023-04-13T11:56:08.678Z",
+      "id": "981e747f-cf1e-4e80-9d5a-0f9514b29304",
+      "userid": "e72412e3-e3c1-4487-bbf5-daaeb017ea0d",
+      "title": "Sus Mejores Tangos",
+      "picture": "http://res.cloudinary.com/rafal-si/image/upload/v1682869491/iw3thiwhbqxhxqbsj2m7.jpg",
+      "date": "2023-04-30T15:44:51.457Z",
       "melodies": [
         {
-          "id": "7d7ffc5e-8be0-4bcc-a4ac-1a3cd46a5cb4",
-          "title": "Tango ",
-          "artist": "Trolio",
+          "id": "0d867440-7e85-4dc5-a0f8-5793505c337a",
+          "title": "Por una Cabeza",
+          "artist": "Carlos Gardel",
           "genre": "tango",
           "duration": "02:30"
         },
         {
-          "id": "11aaf8ca-3292-461c-bf79-dce5bce70764",
-          "title": "tan",
-          "artist": "sss",
-          "genre": "ddd",
-          "duration": "02:42"
+          "id": "a20c9648-4a93-44ae-9c83-e400cd176330",
+          "title": "Volver",
+          "artist": "Carlos Gardel",
+          "genre": "tango",
+          "duration": "02:51"
         },
         {
-          "id": "d96a6986-1f6d-4811-8d56-1d620d7d3d14",
-          "title": "rrwr",
-          "artist": "ddsgsf",
-          "genre": "gdf",
-          "duration": "11:35"
+          "id": "0e734e5b-ec94-4657-a982-94650718bf15",
+          "title": "El día que me quieras",
+          "artist": "Carlos Gardel",
+          "genre": "tango",
+          "duration": "03:20"
         },
         {
-          "id": "85722e69-f187-4db2-b819-08db5f83a69a",
-          "title": "fasdkjlka",
-          "artist": "sdfaf",
-          "genre": "rrgsfdg",
-          "duration": "02:12"
+          "id": "e6a93f5b-f847-4c7b-babf-de9e2a56c098",
+          "title": "Cuesta Abajo",
+          "artist": "Carlos Gardel",
+          "genre": "tango",
+          "duration": "02:55"
         }
       ]
     },
     {
-      "id": "00c8685f-c821-40f6-af0f-54973a416e2b",
+      "id": "860e0312-91f3-44b2-afd2-85aa6dd25662",
+      "userid": "e72412e3-e3c1-4487-bbf5-daaeb017ea0d",
+      "title": "Medley",
+      "picture": "http://res.cloudinary.com/rafal-si/image/upload/v1682869773/vcol4kqqikhtxrs5y6lv.jpg",
+      "date": "2023-04-30T15:49:33.721Z",
+      "melodies": [
+        {
+          "id": "8447971f-2bfd-47d9-a04c-7bcc4abaab5e",
+          "title": "Caminito",
+          "artist": "Carlos Gardel",
+          "genre": "tango",
+          "duration": "02:32"
+        },
+        {
+          "id": "01b1e742-a764-412d-b74e-d0dc7a99ef5f",
+          "title": "Adios Muchachos",
+          "artist": "Carlos Gardel",
+          "genre": "tango",
+          "duration": "02:24"
+        },
+        {
+          "id": "d4eef3e3-613e-4c89-b6ce-5afa97bd983e",
+          "title": "Mano a Mano",
+          "artist": "Carlos Gardel",
+          "genre": "tango",
+          "duration": "03:05"
+        },
+        {
+          "id": "ca1fa0a1-2c0b-4af6-aa11-da146036ea98",
+          "title": "Sus OJos Se Cerraron",
+          "artist": "Carlos Gardel",
+          "genre": "tango",
+          "duration": "02:33"
+        }
+      ]
+    },
+    {
+      "id": "019646d4-fa5c-4ae9-b830-bd042496b73b",
       "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "title": "test 6",
-      "picture": "http://res.cloudinary.com/rafal-si/image/upload/v1681424691/ua4v89cm0d9batbysh40.jpg",
-      "date": "2023-04-13T22:24:51.203Z",
+      "title": "Sus 50 Mejores Tangos",
+      "picture": "http://res.cloudinary.com/rafal-si/image/upload/v1682870129/ekr81jxfbzm3uzmbayrq.jpg",
+      "date": "2023-04-30T15:55:29.044Z",
       "melodies": [
         {
-          "id": "798a539f-a8b2-4354-9794-64e178fa9c36",
-          "title": "tango Te Amo",
-          "artist": "Troilo",
-          "genre": "Milonga",
-          "duration": "01:45"
-        }
-      ]
-    },
-    {
-      "id": "15178ac4-3f26-4b2c-8d0e-709d90c0c85d",
-      "userid": "1d39f87c-6134-48cc-a2a3-4d68e4be7172",
-      "title": "Test 100",
-      "picture": "http://res.cloudinary.com/rafal-si/image/upload/v1681468956/csgez9knqs0a6vgi4vgf.jpg",
-      "date": "2023-04-14T10:42:36.877Z",
-      "melodies": [
-        {
-          "id": "7c7c9302-2b86-4786-8efb-3799ad025ddb",
-          "title": "assa",
-          "artist": "as",
-          "genre": "as23",
-          "duration": "23"
-        },
-        {
-          "id": "b1fa5e4f-9069-4074-89ef-f63155271035",
-          "title": "tango ta",
-          "artist": "Romero",
-          "genre": "tango ",
-          "duration": "3"
-        },
-        {
-          "id": "c9f9f662-29d9-4d88-973c-a12be10e66c0",
-          "title": "sf",
-          "artist": "zfz",
-          "genre": "xf",
-          "duration": "99"
-        },
-        {
-          "id": "2c70d383-6ae2-438f-8c55-1e6b861aa3b8",
-          "title": "hf",
-          "artist": "gf",
-          "genre": "gf",
-          "duration": "88"
-        }
-      ]
-    },
-    {
-      "id": "b9fc432f-cb49-4fa0-a1da-86608c6cf9b2",
-      "userid": "e72412e3-e3c1-4487-bbf5-daaeb017ea0d",
-      "title": "Rafal Test 1",
-      "picture": "http://res.cloudinary.com/rafal-si/image/upload/v1681472653/shjkrefos1mwn4vs6ygd.jpg",
-      "date": "2023-04-14T11:44:13.768Z",
-      "melodies": [
-        {
-          "id": "141d4a5c-51a0-4363-b4d6-bbe2ae86f3ce",
-          "title": "Rafal Tango 1",
-          "artist": "eeee",
+          "id": "f8363df9-6c43-46ec-89e3-3fad7dbd7534",
+          "title": "El día que me quieras",
+          "artist": "Carlos Gardel",
           "genre": "tango",
-          "duration": "04:07"
+          "duration": "03:20"
         },
         {
-          "id": "f46ae2b8-c881-4d58-9143-a59ec1853a7d",
-          "title": "Rafal Tango 2",
-          "artist": "rrrr",
-          "genre": "milonga",
-          "duration": "02:56"
+          "id": "84005b04-765d-489e-943a-5e1395f3327f",
+          "title": "Cuesta abajo",
+          "artist": "Carlos Gardel",
+          "genre": "tango",
+          "duration": "03:15"
         },
         {
-          "id": "6a0fb316-a1fe-41fb-92f3-2bd30bc53e0f",
-          "title": "Rafal Tango 3",
-          "artist": "ooooo",
-          "genre": "valtz",
-          "duration": "05:13"
+          "id": "973cef39-dd37-4779-8b92-9274818bff42",
+          "title": "Lejana tierra mía",
+          "artist": "Carlos Gardel",
+          "genre": "tango",
+          "duration": "02:44"
+        },
+        {
+          "id": "d384ba8f-7c66-4333-b530-f9d47e58d9c8",
+          "title": "Muñeca brava",
+          "artist": "Carlos Gardel",
+          "genre": "tango",
+          "duration": "02:21"
+        },
+        {
+          "id": "e4916a86-711a-49ff-826f-400a27efb730",
+          "title": "Palomita blanca",
+          "artist": "Carlos Gardel",
+          "genre": "vals",
+          "duration": "03:07"
         }
       ]
     },
     {
-      "id": "efdacb92-50d9-486c-98e9-8831cc6b5d66",
-      "userid": "e72412e3-e3c1-4487-bbf5-daaeb017ea0d",
-      "title": "Rafal Test 2",
-      "picture": "http://res.cloudinary.com/rafal-si/image/upload/v1681472704/hmke48j0kqqnkebi4fcq.jpg",
-      "date": "2023-04-14T11:45:04.794Z",
+      "id": "1583c363-955d-46b0-be71-6b7e8b825ab7",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "Tango Gouge",
+      "picture": "http://res.cloudinary.com/rafal-si/image/upload/v1682870533/bv1ipiv7yi9bq1lhnkkc.jpg",
+      "date": "2023-04-30T16:02:13.714Z",
       "melodies": [
         {
-          "id": "bbc62143-e88c-4973-b488-184cadb75a19",
-          "title": "Tango Test 1",
-          "artist": "nnnnnnn",
-          "genre": "milonga",
-          "duration": "06:07"
+          "id": "85bf8ad6-0016-4bb0-875f-cfef556c7a1c",
+          "title": "Esta Noche de Luna",
+          "artist": "Carlos Di Sarli",
+          "genre": "tango",
+          "duration": "03:11"
         },
         {
-          "id": "3c4ba026-7531-4bc1-92ea-338d05ee6be3",
-          "title": "Tango Test 2",
-          "artist": "zzzzzzz",
+          "id": "3d4a3135-65d4-41af-9b83-2e39504eabdf",
+          "title": "Patotero",
+          "artist": "Carlos Di Sarli",
           "genre": "tango",
+          "duration": "02:34"
+        },
+        {
+          "id": "540936a5-dc7e-49f4-a8ed-1d519d7cc68e",
+          "title": "Motivo sentimental",
+          "artist": "Carlos Di Sarli",
+          "genre": "tango",
+          "duration": "02:52"
+        }
+      ]
+    },
+    {
+      "id": "61588436-fd27-484c-940c-3f8abb089035",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "LA MILONGA DE BUENOS AIRES",
+      "picture": "http://res.cloudinary.com/rafal-si/image/upload/v1682870892/w2jypbfq1znicmrg1vhj.jpg",
+      "date": "2023-04-30T16:08:12.539Z",
+      "melodies": [
+        {
+          "id": "4a6153a3-bc05-4726-8afd-0a35240795fa",
+          "title": "La Milonga de Buenos Aires",
+          "artist": "Francisco Canaro",
+          "genre": "milonga",
+          "duration": "02:52"
+        },
+        {
+          "id": "b0d868e5-93e6-4aa9-8d82-db89dccd82ed",
+          "title": "Milonga Criolla",
+          "artist": "Francisco Canaro",
+          "genre": "milonga",
+          "duration": "03:01"
+        },
+        {
+          "id": "469af59e-eae7-485d-84b3-9dfcfc90885b",
+          "title": "Milongas Sentimental",
+          "artist": "Francisco Canaro",
+          "genre": "milonga",
+          "duration": "03:09"
+        },
+        {
+          "id": "629f3fc6-f410-495c-8531-3c16748ea81e",
+          "title": "Tangón",
+          "artist": "Francisco Canaro",
+          "genre": "milonga",
+          "duration": "03:14"
+        }
+      ]
+    },
+    {
+      "id": "960ee91d-14d6-48f1-9bb6-6a6e2a5ac904",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "Floreal Ruiz",
+      "picture": "http://res.cloudinary.com/rafal-si/image/upload/v1682871397/atzfqlj606cvtho6ripq.jpg",
+      "date": "2023-04-30T16:16:37.022Z",
+      "melodies": [
+        {
+          "id": "ae9beb61-38b2-4260-bff2-c7bb2214a69d",
+          "title": "Palomita Blanca",
+          "artist": "Anibal Troilo",
+          "genre": "vals",
           "duration": "03:17"
+        },
+        {
+          "id": "035be4a1-f41f-4fa3-9382-c807e4e8d7dc",
+          "title": "Tu Diagnostico",
+          "artist": "Anibal Troilo",
+          "genre": "vals",
+          "duration": "02:16"
+        },
+        {
+          "id": "3338eb0f-80cd-4004-a2f2-a1addf294b42",
+          "title": "Pedacito de Cielo",
+          "artist": "Anibal Troilo",
+          "genre": "vals",
+          "duration": "02:47"
+        },
+        {
+          "id": "e154efb9-eda4-46d0-9a05-47e241545617",
+          "title": "Uruguaya",
+          "artist": "Anibal Troilo",
+          "genre": "vals",
+          "duration": "02:20"
+        }
+      ]
+    },
+    {
+      "id": "8f1eb888-0cc4-4bd8-93de-bb300800d5c2",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "Medallita De La Suerte",
+      "picture": "http://res.cloudinary.com/rafal-si/image/upload/v1682872655/gc8aawuqvzzvkymaaocg.jpg",
+      "date": "2023-04-30T16:37:35.248Z",
+      "melodies": [
+        {
+          "id": "93913518-4b15-49fb-9cde-2c039b53fb12",
+          "title": "Hacelo Por La Vieja",
+          "artist": "Alfredo De Angelis",
+          "genre": "tango",
+          "duration": "02:52"
+        },
+        {
+          "id": "f2b2b831-1414-421b-9125-74620ffcbbf7",
+          "title": "Milonga Celestial",
+          "artist": "Alfredo De Angelis",
+          "genre": "milonga",
+          "duration": "03:18"
+        },
+        {
+          "id": "6e947995-6975-4c93-904b-cc9cd7f42684",
+          "title": "Frivolidad",
+          "artist": "Alfredo De Angelis",
+          "genre": "vals",
+          "duration": "03:14"
+        },
+        {
+          "id": "5385c2f9-a426-46fa-9bca-895f5955ae62",
+          "title": "Volvamos a Empezar",
+          "artist": "Alfredo De Angelis",
+          "genre": "tango",
+          "duration": "03:00"
         }
       ]
     }
